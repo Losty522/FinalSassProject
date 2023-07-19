@@ -1,0 +1,41 @@
+
+  .title{
+    height: 600px;
+    width: 100%;
+
+    background-image: url("/sass-final/img/title.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    
+  }
+
+
+  @media only screen and (max-width: 1024px){
+    .title{
+      height: 500px;
+      width: 100%;
+  
+      background-image: url("/sass-final/img/title.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+      
+    }
+    
+  }
+
+  @media only screen and (max-width: 750px){
+    .title{
+      height: 400px;
+      width: 100%;
+  
+      background-image: url("/sass-final/img/title.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+      
+    }
+  
+  
+  }

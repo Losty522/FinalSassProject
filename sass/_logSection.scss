@@ -1,0 +1,141 @@
+.about{
+  .shinLogo{
+    height: 150px;
+    width: 100%;
+    border: 1px solid rgb(242, 122, 122);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  
+    p{
+      color: gray;
+      font-size: 28px;
+      padding-top: 30px;
+    }
+  
+    .logo{
+      margin-left: 25px;
+    }
+  }
+
+  .sec-sentence{
+    border: 1px solid rgb(242, 122, 122);
+    color: grey;
+    height: 500px;
+    width: 60%;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+
+    h1{
+      font-size: 40px;
+    }
+    p{
+      padding-top: 30px;
+      font-size: 22px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1024px){
+  .about{
+    .shinLogo{
+      height: 300px;
+      width: 90%;
+      margin: auto;
+      border: 1px solid red;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    
+      p{
+        order: 2;
+        color: gray;
+        font-size: 25px;
+        padding-top: 30px;
+      }
+    
+      .logo{
+        height: 50%;
+        width: 30%;
+        margin-left: 0;
+      }
+    }
+
+    .sec-sentence{
+      border: 1px solid rgb(242, 122, 122);
+      color: grey;
+      height: 400px;
+      width: 90%;
+      text-align: center;
+      padding-top: 30px;
+      margin: auto;
+  
+      h1{
+        font-size: 40px;
+      }
+      p{
+        padding-top: 30px;
+        font-size: 22px;
+      }
+  
+    }
+
+  }  
+
+
+}
+
+@media only screen and (max-width: 750px){
+  .about{
+    .shinLogo{
+      height: 300px;
+      width: 95%;
+      margin: auto;
+      border: 1px solid red;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    
+      p{
+        order: 2;
+        color: gray;
+        font-size: 25px;
+        padding-top: 30px;
+      }
+    
+      .logo{
+        height: 50%;
+        width: 30%;
+        margin-left: 0;
+      }
+    }
+
+    .sec-sentence{
+      border: 1px solid rgb(242, 122, 122);
+      color: grey;
+      height: 650px;
+      width: 90%;
+      text-align: center;
+      padding-top: 30px;
+      margin: auto;
+  
+      h1{
+        font-size: 40px;
+      }
+      p{
+        padding-top: 30px;
+        font-size: 22px;
+      }
+  
+    }
+  
+
+  }  
+}

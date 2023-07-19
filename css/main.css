@@ -9,6 +9,7 @@ header {
   height: 3rem;
   width: 100%;
   background-color: #d16767;
+  z-index: 2;
 }
 header nav .pc-nav ul {
   width: 90%;
@@ -173,6 +174,7 @@ header nav .sp-menu .sp-menu__link {
   }
   header nav .pc-nav ul li:first-child {
     font-size: 30px;
+    padding-top: 3px;
     margin-right: auto;
   }
   header nav .sp-menu {
@@ -211,7 +213,6 @@ header nav .sp-menu .sp-menu__link {
 .about .shinLogo {
   height: 150px;
   width: 100%;
-  border: 1px solid rgb(242, 122, 122);
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -225,7 +226,6 @@ header nav .sp-menu .sp-menu__link {
   margin-left: 25px;
 }
 .about .sec-sentence {
-  border: 1px solid rgb(242, 122, 122);
   color: grey;
   height: 500px;
   width: 60%;
@@ -265,7 +265,6 @@ header nav .sp-menu .sp-menu__link {
     margin-left: 0;
   }
   .about .sec-sentence {
-    border: 1px solid rgb(242, 122, 122);
     color: grey;
     height: 400px;
     width: 90%;
@@ -305,7 +304,6 @@ header nav .sp-menu .sp-menu__link {
     margin-left: 0;
   }
   .about .sec-sentence {
-    border: 1px solid rgb(242, 122, 122);
     color: grey;
     height: 650px;
     width: 90%;
@@ -322,7 +320,7 @@ header nav .sp-menu .sp-menu__link {
   }
 }
 .products {
-  height: 300px;
+  height: 1100px;
   width: 100%;
   margin-top: 30px;
 }
@@ -351,12 +349,12 @@ header nav .sp-menu .sp-menu__link {
 }
 .products .grid_products {
   width: 90%;
+  height: 60%;
   margin: auto;
   margin-top: 30px;
   padding-left: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid rgb(242, 122, 122);
   position: relative;
   row-gap: 100px;
 }
@@ -371,9 +369,7 @@ header nav .sp-menu .sp-menu__link {
 
 @media only screen and (max-width: 750px) {
   .products {
-    height: 500px;
-    width: 100%;
-    margin-top: 30px;
+    height: 1300px;
   }
   .products .product_head {
     width: 100%;
@@ -405,10 +401,168 @@ header nav .sp-menu .sp-menu__link {
     padding-left: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid rgb(242, 122, 122);
     position: relative;
     row-gap: 100px;
   }
+}
+.Recipes {
+  height: 1200px;
+  width: 100%;
+  margin-top: 30px;
+}
+.Recipes .Recipes_head {
+  width: 100%;
+  height: 400px;
+  background-image: url(/sass-final/img/recipes.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.Recipes .Recipes_head h1 {
+  font-size: 30px;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  background-color: #d16767;
+  position: absolute;
+  top: 50%; /*親要素を起点に上から50%*/
+  left: 50%; /*親要素を起点に左から50%*/
+  transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.Recipes .Recipes_head:after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.Recipes .Recipes_items {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-top: 30px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+.Recipes .Recipes_items img {
+  width: 90%;
+}
+.Recipes .Recipes_items .Recipes_sentence {
+  width: 90%;
+  text-align: center;
+}
+.Recipes .Recipes_items p {
+  margin-top: 3px;
+  font-size: 16px;
+  color: gray;
+}
+.Recipes .Recipes_items a {
+  color: #d16767;
+  margin-top: 3px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .Recipes {
+    height: 1600px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .Recipes .Recipes_head {
+    width: 100%;
+    height: 400px;
+    background-image: url(/sass-final/img/recipes.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .Recipes .Recipes_head h1 {
+    font-size: 30px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    background-color: #d16767;
+    position: absolute;
+    top: 50%; /*親要素を起点に上から50%*/
+    left: 50%; /*親要素を起点に左から50%*/
+    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+  .Recipes .Recipes_head:after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .Recipes .Recipes_items {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    row-gap: 30px;
+  }
+  .Recipes .Recipes_items img {
+    width: 90%;
+  }
+  .Recipes .Recipes_items .Recipes_sentence {
+    width: 90%;
+    text-align: center;
+  }
+  .Recipes .Recipes_items p {
+    margin-top: 3px;
+    font-size: 16px;
+    color: gray;
+  }
+  .Recipes .Recipes_items a {
+    color: #d16767;
+    margin-top: 3px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
+#footer {
+  position: sticky;
+  top: 100vh;
+  background-color: #d16767;
+  border-top: solid 1px lightgray;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+#footer ul {
+  margin-top: 5px;
+  text-align: center;
+}
+#footer ul li {
+  padding: 0 4px;
+  display: inline;
+}
+#footer p {
+  text-align: center;
+}
+#footer a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */

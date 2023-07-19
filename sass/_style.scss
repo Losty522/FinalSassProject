@@ -9,6 +9,7 @@ header{
   height: 3rem;
   width: 100%;
   background-color: $color-nav;
+  z-index: 2;
   nav{
     .pc-nav{
       ul{
@@ -202,6 +203,7 @@ header{
           }
           li:first-child{
             font-size: 30px;
+            padding-top: 3px;
             margin-right: auto;
           }
         }  

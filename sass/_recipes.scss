@@ -1,0 +1,161 @@
+.Recipes{
+  // border: 1px solid rgb(122, 242, 126);
+  height: 1200px;
+  width: 100%;
+  margin-top: 30px;
+  .Recipes_head{
+    // border: 1px solid rgb(242, 122, 122);
+    width: 100%;
+    height: 400px;
+    background-image: url(/sass-final/img/recipes.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+    z-index: 1;
+    h1{
+      font-size: 30px;
+      width: 250px;
+      height: 40px;
+      text-align: center;        
+      color: black;
+      background-color: $color-nav;
+      position: absolute;
+      top: 50%; /*親要素を起点に上から50%*/
+      left: 50%;  /*親要素を起点に左から50%*/
+      transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+      -webkit-transform: translateY(-50%) translateX(-50%);
+    }
+  }
+  .Recipes_head:after {
+    content: '';
+    background-color: rgba(#ffffff, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .Recipes_items{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // border: 1px solid rgb(242, 122, 122);
+    position: relative;
+    
+    
+    img{
+      width: 90%;
+    }
+
+    .Recipes_sentence{
+      width: 90%;
+      // border: 1px solid rgb(242, 122, 122);
+      text-align: center;
+      
+    }
+    p{
+      margin-top: 3px;
+      font-size: 16px; 
+      color: gray;
+    }
+    a{
+      color: $color-nav;
+      margin-top: 3px;
+      font-size: 14px; 
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+    
+}
+
+@media only screen and (max-width: 750px){
+
+  .Recipes{
+    // border: 1px solid rgb(122, 242, 126);
+    height: 1600px;
+    width: 100%;
+    margin-top: 30px;
+    .Recipes_head{
+      // border: 1px solid rgb(242, 122, 122);
+      width: 100%;
+      height: 400px;
+      background-image: url(/sass-final/img/recipes.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+      position: relative;
+      z-index: 1;
+      h1{
+        font-size: 30px;
+        width: 250px;
+        height: 40px;
+        text-align: center;        
+        color: black;
+        background-color: $color-nav;
+        position: absolute;
+        top: 50%; /*親要素を起点に上から50%*/
+        left: 50%;  /*親要素を起点に左から50%*/
+        transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+        -webkit-transform: translateY(-50%) translateX(-50%);
+      }
+    }
+    .Recipes_head:after {
+      content: '';
+      background-color: rgba(#ffffff, 0.5);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+  
+    .Recipes_items{
+      width: 80%;
+      height: 70%;
+      margin: auto;
+      margin-top: 30px;
+      padding-left: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // border: 1px solid rgb(242, 122, 122);
+      position: relative;
+      row-gap: 30px;
+      
+      
+      img{
+        width: 90%;
+      }
+  
+      .Recipes_sentence{
+        width: 90%;
+        // border: 1px solid rgb(242, 122, 122);
+        text-align: center;
+        
+      }
+      p{
+        margin-top: 3px;
+        font-size: 16px; 
+        color: gray;
+      }
+      a{
+        color: $color-nav;
+        margin-top: 3px;
+        font-size: 14px; 
+        text-decoration: none;
+      }
+    }
+  }
+  
+}
